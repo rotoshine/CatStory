@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.49.3/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/res/merged/debug/xml/provider_paths.xml",
+        "source": "/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/CatStory/react-native-image-picker/unspecified/res/xml/provider_paths.xml"
+    }
+]
