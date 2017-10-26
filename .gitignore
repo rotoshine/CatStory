@@ -3,3 +3,4 @@ node_modules/
 npm-debug.*
 .vscode
 .idea
+android/app/google-services.json
