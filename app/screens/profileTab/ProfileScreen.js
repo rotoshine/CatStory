@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Button } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import styled from 'styled-components/native';
 
+import { loadUser, logout } from '../../utils/authUtils';
+
 const ProfileView = styled.View`
-  margin-top: 20px;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -84,28 +85,66 @@ const ProfileDescriptionView = styled.View`
 `;
 
 export default class ProfileScreen extends Component {
-  static navigationOptions = {
-    tabBarIcon: () => <Icon name="cat" size={30} />
+  constructor (props) {
+    super(props);
+
+    this.state = {
+      user: null,
+      result: null
+    };
   }
-  render() {
+
+  componentWillMount () {
+    this.loadUser();
+  }
+
+  async loadUser () {
+    const user = await loadUser();
+    if (user === null) {
+      this.props.navigation.navigate('Login');
+    } else {
+      this.setState({
+        user
+      });
+    }
+  }
+
+
+  async logout () {
+    try {
+      if (logout()) {
+        this.props.navigation.navigate('Login');
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  }
+
+  render () {
+    const { user } = this.state;
+
+    if (user === null) {
+      return null;
+    }
+
     return (
       <ProfileView>
         <UserActions>
-          <Username>winterwolf0412</Username>
+          <Username>{user.name}</Username>
           <UserActionButtons>
             <UserActionButton>
-              <Icon name="bookmark" size={30} />
+              <Icon name="bookmark" size={30}/>
             </UserActionButton>
             <UserActionButton>
-              <Icon name="account-plus" size={30} />
+              <Icon name="account-plus" size={30}/>
             </UserActionButton>
             <UserActionButton>
-              <Icon name="menu" size={30} />
+              <Icon name="menu" size={30}/>
             </UserActionButton>
           </UserActionButtons>
         </UserActions>
         <Header>
-          <UserImage source={{ uri: 'https://pbs.twimg.com/profile_images/870916546704490497/YpnQtyBK_bigger.jpg' }} />
+          <UserImage source={{ uri: 'https://pbs.twimg.com/profile_images/870916546704490497/YpnQtyBK_bigger.jpg' }}/>
           <UserStatusAndProfileButton>
             <UserStatus>
               <Count>
@@ -131,6 +170,8 @@ export default class ProfileScreen extends Component {
           <Text>Longboard Rider</Text>
           <Text>github.com/rotoshine</Text>
         </ProfileDescriptionView>
+        <Button title="Login" onPress={() => this.props.navigation.navigate('Login')}/>
+        <Button title="Logout" onPress={() => this.logout()}/>
       </ProfileView>
     );
   }
