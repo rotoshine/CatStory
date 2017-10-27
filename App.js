@@ -1,10 +1,9 @@
 import React from 'react';
-import { View, Text } from 'react-native';
 
-import Navigator from './app/Navigator';
+import MainNavigator from './app/MainNavigator';
 
-const App = () => ( 
-  <Navigator />
+const App = () => (
+  <MainNavigator />
 );
 
 export default App;
