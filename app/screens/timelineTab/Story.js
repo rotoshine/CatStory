@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text } from 'react-native';
+import moment from 'moment';
 import styled from 'styled-components/native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import FitImage from 'react-native-fit-image';
 
-const ArticleView = styled.View`
+moment.locale('kr');
+
+const StoryView = styled.View`
   display: flex;
   flex-direction: column;
   margin: 10px 15px 10px 15px;
@@ -54,7 +57,7 @@ const UsernameText = styled.Text`
   marginRight: 3px;
 `;
 
-const ArticleMenu = styled.View`
+const StoryMenu = styled.View`
   justify-content: flex-end;
 `;
 
@@ -63,24 +66,25 @@ const MomentText = styled.Text`
   fontSize: 10;
 `;
 
-const Article = ({ article }) => (
-  <ArticleView>
+const Story = ({ story }) => (
+  <StoryView>
     <Header>
       <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start' }}>
-        <UserImage source={{ uri: 'https://pbs.twimg.com/profile_images/870916546704490497/YpnQtyBK_bigger.jpg' }} />
-        <HeaderUsernameText aderUsernameText>{article.username}</HeaderUsernameText>
+        <UserImage source={{ uri: 'https://pbs.twimg.com/profile_images/870916546704490497/YpnQtyBK_bigger.jpg' }}/>
+        <HeaderUsernameText aderUsernameText>{story.name}</HeaderUsernameText>
       </View>
-      <Icon name="menu-down" size={20} />
+      <Icon name="menu-down" size={20}/>
     </Header>
-    <FitImage source={{ uri: article.image }} />
+    <FitImage indicator source={{ uri: story.imageUri }}/>
     <Body>
-      <Content>
-        <UsernameText>{article.username}</UsernameText>
-        <Text>{article.content}</Text>
-      </Content>
-      <MomentText>1일 전</MomentText>
+    <Content>
+      <UsernameText>{story.name}</UsernameText>
+      <Text>{story.content}</Text>
+    </Content>
+    <MomentText>{moment(story.createdAt).fromNow()}</MomentText>
     </Body>
-  </ArticleView>
+  </StoryView>
 );
 
-export default Article;
+
+export default Story;
