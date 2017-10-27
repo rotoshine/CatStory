@@ -3,12 +3,30 @@
 
     <item
         is-multidex="false"
+        jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/11.4.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c2cadea4d8a1a5b5c4e5f0dc99a99a43774f5e6e">
+        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-connection-11.4.2_5062e05c9a68492b5d7272b411657d7483bc87d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/winterwolf0412/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
         <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_11056bda3f7239e5048c790ea6acf14bf5f78cad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_2b153ec821dcf1a742a8644c8763da15387338e0.jar" />
     </item>
     <item
         is-multidex="false"
@@ -30,111 +48,21 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/11.4.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="73c80b05a390e8319d1ef7a236739cd610c8f774">
+        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-11.4.2_d665938667c3c0620ec5da5235524b7ccf25587d.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="8f615bca00639150c9eb6175d4b5471193f70794">
         <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_c8b903639aaad1784ef04426cbd6121f7b2c4d03.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/11.4.2/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="5f519b8c692038a47ee404b6ea6b847f6402000c">
-        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-11.4.2_d5398205bd51b4a1ee463404c817ad8c34c81cac.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_f62fbabeb9bd6db24088a73c7d441e251ab8e88d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/winterwolf0412/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_add57e4b56c14b4cfce98e353a24842a7f380392.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/CatStory/react-native-image-picker/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="efeb573638d6b2c0d30fbf3e60641272600cf3fe">
-        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/CatStory-react-native-image-picker-unspecified_c4e99e9bb3cc615147e6bf1425d3cb46a57f07da.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/11.4.2/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6e6b94b72d7912a627fb1629c310b2bca9261f06">
-        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-11.4.2_6fc7c1df0bda1652a04794c0a992458c5b635962.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/winterwolf0412/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_30adad8a54412335900eb988e21a3ec5d1e26c5f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/11.4.2/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="20d6aa9a18ea9833cd2bee95dff7cd303cdb80e4">
-        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-11.4.2_5ff119167a3fe8e47799f04f198b58a5275a254a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/winterwolf0412/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_d2dbc3afcc88db1586de781dc28ae0c68dc04b61.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_beab73c209f68572bea3a6b15480c0fe382a27ed.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/winterwolf0412/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_6160acaef91bc7077afb69ddc7e4837e830bc829.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
-        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_2b153ec821dcf1a742a8644c8763da15387338e0.jar" />
     </item>
     <item
         is-multidex="false"
@@ -174,6 +102,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/CatStory/react-native-fetch-blob/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="89130388da2ea73dd7ef12caea950c8abab7d44e">
+        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/CatStory-react-native-fetch-blob-unspecified_ba298e716a58689bffafc5884ae71e3601c40b24.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -192,12 +129,39 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/11.4.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5f519b8c692038a47ee404b6ea6b847f6402000c">
+        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-11.4.2_d5398205bd51b4a1ee463404c817ad8c34c81cac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_f62fbabeb9bd6db24088a73c7d441e251ab8e88d.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/winterwolf0412/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="6975da39a7040257bd51d21a231b76c915872d38">
         <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_cfc364b1097cff8243ec50cfa644b9bfb17fbf76.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/winterwolf0412/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_add57e4b56c14b4cfce98e353a24842a7f380392.jar" />
     </item>
     <item
         is-multidex="false"
@@ -246,6 +210,24 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/CatStory/react-native-image-picker/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="efeb573638d6b2c0d30fbf3e60641272600cf3fe">
+        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/CatStory-react-native-image-picker-unspecified_c4e99e9bb3cc615147e6bf1425d3cb46a57f07da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/11.4.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6e6b94b72d7912a627fb1629c310b2bca9261f06">
+        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-11.4.2_6fc7c1df0bda1652a04794c0a992458c5b635962.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/CatStory/react-native-firebase/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -264,6 +246,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/11.4.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3e1185bdde08224bf1275f6b4f9771df5e738e1b">
+        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-common-11.4.2_eb3233504610a2af4d29fb7c22091abb63babdad.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -273,12 +264,48 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/winterwolf0412/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_30adad8a54412335900eb988e21a3ec5d1e26c5f.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.49.3/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="e013739f7ddb6740bf196dc515d8999a6030f9ea">
         <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.49.3_8521fa91787be2b08b3755cef357879a29f35ab2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/11.4.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="20d6aa9a18ea9833cd2bee95dff7cd303cdb80e4">
+        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-11.4.2_5ff119167a3fe8e47799f04f198b58a5275a254a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/winterwolf0412/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_d2dbc3afcc88db1586de781dc28ae0c68dc04b61.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_beab73c209f68572bea3a6b15480c0fe382a27ed.jar" />
     </item>
     <item
         is-multidex="false"
@@ -324,6 +351,24 @@
         revision="23.0.1"
         sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
         <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_c8f3c93517703f1206aa202297b24c95e9cdaa16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/11.4.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="97fb40924e83775c91374180494801cb022aa008">
+        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-11.4.2_a9b4b0a1100dcdcf735a94024bd75c2edd2e29f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/winterwolf0412/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/winterwolf0412/Documents/Works/react_native_workspace/CatStory/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_6160acaef91bc7077afb69ddc7e4837e830bc829.jar" />
     </item>
 
 </items>
