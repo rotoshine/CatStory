@@ -29,21 +29,35 @@ const SelectedImage = styled.Image`
   resizeMode: contain;
 `;
 
+
+const ImageNotSelectedText = styled.Text`
+  justify-content: center;
+  align-items: center;
+`;
+
 const CameraIconButton = ({ onPress }) => {
   const wrapperStyle = {
     width: deviceWidth / 4,
     height: deviceWidth / 4,
+    padding: 5,
+    display: 'flex'
+  };
+
+  const iconWrapperStyle = {
+    width: '100%',
+    height: '100%',
     backgroundColor: '#ffffff',
     borderColor: '#cccccc',
     borderWidth: 1,
-    display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
   };
 
   return (
     <TouchableHighlight style={wrapperStyle} onPress={onPress}>
-      <Icon name="camera" color="#000000" size={80} />
+      <View style={iconWrapperStyle}>
+        <Icon name="camera" color="#000000" size={deviceWidth / 4 - 20} />
+      </View>
     </TouchableHighlight>
   );
 };
@@ -140,11 +154,9 @@ export default class SelectMediaScreen extends Component {
     return (
       <FormView>
         <ImagePreviewWrapperView>
-          {selectedImageUri &&
-            <SelectedImage source={{ uri: selectedImageUri }} />
-          }
-          {!selectedImageUri &&
-            <Text>이미지를 선택해주세요.</Text>
+          {selectedImageUri ?
+            <SelectedImage source={{ uri: selectedImageUri }} /> :
+            <ImageNotSelectedText>이미지를 선택해주세요.</ImageNotSelectedText>
           }
         </ImagePreviewWrapperView>
         <ScrollView style={{

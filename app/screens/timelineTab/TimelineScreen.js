@@ -87,7 +87,7 @@ export default class TimelineScreen extends Component {
     await this.asyncSetState({ isFetching: true });
 
     const { lastStoryKey, stories = [] } = this.state;
-    const fetchedStories = await fetchStories(fetchCount, lastStoryKey);
+    const fetchedStories = await fetchStories(fetchCount, appendMode ? lastStoryKey : null);
     const nextLastStoryKey = fetchedStories.length > 0 ? _.last(fetchedStories).key : null;
     const nextStories = appendMode ? [...stories, ...fetchedStories] : fetchedStories;
 

@@ -4,8 +4,9 @@ import { StackNavigator, TabNavigator, TabBarTop } from 'react-navigation';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import ProfileScreen from './screens/profileTab/ProfileScreen';
-import LoginScreen from './screens/profileTab/LoginScreen';
-import CreateAccountScreen from './screens/profileTab/CreateAccountScreen';
+import ProfileEditScreen from './screens/profileTab/ProfileEditScreen';
+import LoginScreen from './screens/auth/LoginScreen';
+import CreateAccountScreen from './screens/auth/CreateAccountScreen';
 import SelectMediaScreen from './screens/storyTab/SelectMediaScreen';
 import CreateStoryScreen from './screens/storyTab/CreateStoryScreen';
 import TimelineScreen from './screens/timelineTab/TimelineScreen';
@@ -28,7 +29,14 @@ const MainTabNavigator = TabNavigator({
     }
   },
   ProfileTab: {
-    screen: ProfileScreen,
+    screen: StackNavigator({
+      Profile: {
+        screen: ProfileScreen
+      },
+      ProfileEdit: {
+        screen: ProfileEditScreen
+      }
+    }),
     navigationOptions: {
       tabBarIcon: () => <Icon name="cat" size={30}/>
     }

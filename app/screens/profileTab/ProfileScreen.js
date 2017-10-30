@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Button } from 'react-native';
+import { TouchableHighlight, Text, Button } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import styled from 'styled-components/native';
 
@@ -85,6 +85,10 @@ const ProfileDescriptionView = styled.View`
 `;
 
 export default class ProfileScreen extends Component {
+  static navigationOptions = {
+    tabBarIcon: () => <Icon name="plus" size={30}/>,
+    header: null
+  };
   constructor (props) {
     super(props);
 
@@ -101,7 +105,7 @@ export default class ProfileScreen extends Component {
   async loadUser () {
     const user = await loadUser();
     if (user === null) {
-      this.props.navigation.navigate('Login');
+      this.moveLoginScreen();
     } else {
       this.setState({
         user
@@ -111,13 +115,12 @@ export default class ProfileScreen extends Component {
 
 
   async logout () {
-    try {
-      if (logout()) {
-        this.props.navigation.navigate('Login');
-      }
-    } catch (e) {
-      console.error(e);
-    }
+    await logout();
+    this.moveLoginScreen();
+  }
+
+  moveLoginScreen () {
+    this.props.navigation.navigate('Login');
   }
 
   render () {
@@ -160,7 +163,9 @@ export default class ProfileScreen extends Component {
                 <Text>팔로잉</Text>
               </Count>
             </UserStatus>
-            <ProfileEditButton>프로필 수정</ProfileEditButton>
+            <TouchableHighlight onPress={() => this.props.navigation.navigate('ProfileEdit')}>
+              <ProfileEditButton>프로필 수정</ProfileEditButton>
+            </TouchableHighlight>
           </UserStatusAndProfileButton>
         </Header>
         <ProfileDescriptionView>
