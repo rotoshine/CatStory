@@ -4,11 +4,7 @@ npm-debug.*
 android/app/google-services.json
 
 # Xcode
-!**/*.xcodeproj
-!**/*.pbxproj
-!**/*.xcworkspacedata
-!**/*.xcsettings
-!**/*.xcscheme
+build/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -42,6 +38,7 @@ buck-out
 /ReactAndroid/src/main/gen
 
 # Android
+build/
 .idea
 .gradle
 local.properties
