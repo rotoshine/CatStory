@@ -1,3 +1,5 @@
+import { Alert } from 'react-native';
+
 import firebase from 'react-native-firebase';
 import _ from 'lodash';
 
@@ -11,16 +13,15 @@ function getStorage() {
   return firebase.storage().ref(REF_KEY);
 }
 async function fetchStories(fetchCount = 10, endAt) {
-  const db = getDB();
-  const result = await db.orderByKey().limitToLast(fetchCount).endAt(endAt).once('value');
+  try {
+    const db = getDB();
+    const result = await db.orderByKey().limitToLast(fetchCount).endAt(endAt).once('value');
 
-  const storiesJSON = result.toJSON();
-
-  if (storiesJSON !== null)  {
-    return _.values(storiesJSON);
+    return result && result.toJSON() ? _.values(result.toJSON()) : [];
+  } catch (e) {
+    Alert.alert(`뭔가 문제가 있습니다! ${e.message}`);
   }
 
-  return [];
 }
 
 function createNewStoryKey() {

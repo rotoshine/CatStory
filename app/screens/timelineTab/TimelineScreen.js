@@ -104,7 +104,7 @@ export default class TimelineScreen extends Component {
 
     if (imageUri) {
       const { navigate } = this.props.navigation;
-      navigate('CreateStory', { selectedImageUri: response.uri });
+      navigate('CreateStory', { selectedImageUri: imageUri });
     }
   };
 
@@ -136,7 +136,7 @@ export default class TimelineScreen extends Component {
         </Header>
         { isFetching && <ActivityIndicator /> }
         {
-          !isFetching && stories === null &&
+          stories !== null && stories.length === 0 &&
           <InfoView>
             <Text h3>어머나! 스토리가 하나도 없네요!</Text>
           </InfoView>
