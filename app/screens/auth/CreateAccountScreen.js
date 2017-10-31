@@ -3,6 +3,9 @@ import { Alert, AsyncStorage } from 'react-native';
 import styled from 'styled-components/native';
 import firebase from 'react-native-firebase';
 import { FormLabel, FormInput, Button } from 'react-native-elements';
+import Spinner from 'react-native-loading-spinner-overlay';
+
+import { saveUser } from '../../utils/authUtils';
 
 const CreateAccountView = styled.View`
   display: flex;
@@ -25,6 +28,7 @@ export default class CreateAccountScreen extends Component {
     super(props);
 
     this.state = {
+      isFetching: false,
       email: null,
       password: null,
       confirmPassword: null,
@@ -32,8 +36,15 @@ export default class CreateAccountScreen extends Component {
     };
   }
 
+  async asyncSetState(state) {
+    return new Promise((resolve) => {
+      this.setState(state, resolve);
+    });
+  }
+
   async createUser (email, name, password) {
     try {
+      await this.asyncSetState({ isFetching: true });
       const result = await firebase.auth().createUserWithEmailAndPassword(email, password);
       const user = Object.assign({}, result.toJSON(), { name });
 
@@ -41,7 +52,11 @@ export default class CreateAccountScreen extends Component {
       const db = firebase.database().ref();
       await db.child('users').child(user.uid).set(user);
 
-      await AsyncStorage.wjehsetItem('@CatStory:user', JSON.stringify(user));
+      await saveUser(user);
+      await this.asyncSetState({ isFetching: false });
+
+      this.props.navigation.navigate('TimelineTab');
+
     } catch (e) {
       console.error(e);
     }
@@ -65,10 +80,11 @@ export default class CreateAccountScreen extends Component {
   };
 
   render () {
-    const { email, name, password, confirmPassword } = this.state;
+    const { isFetching, email, name, password, confirmPassword } = this.state;
 
     return (
       <CreateAccountView>
+        <Spinner visible={isFetching} />
         <FormItem>
           <FormLabel>email</FormLabel>
           <FormInput value={email} keyboardType="email-address" placeholder="email"
