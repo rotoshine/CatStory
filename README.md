@@ -33,6 +33,7 @@
     ".write": "auth != null"
   }
 }
+```
 
 ### Storage 활성화
 
