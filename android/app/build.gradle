@@ -150,7 +150,6 @@ android {
 }
 
 dependencies {
-    compile project(':react-native-fetch-blob')
     compile(project(':react-native-firebase')) {
         transitive = false
     }
