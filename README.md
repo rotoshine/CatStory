@@ -11,7 +11,7 @@
 
 파이어베이스의 인증 및 DB, 스토리지를 쓰고 있으므로 firebase app 세팅이 필요하다
 
-1. https://console.firebase.google.com 에 접속하여 프롲게트를 생성한다
+1. https://console.firebase.google.com 에 접속하여 프로젝트를 생성한다
 2. 프로젝트 대시보드에서 안드로이드 앱을 추가한다
 3. 앱 추가 후 `google-services.json`을 다운받아 `android/app/` 아래로 복사한다.
 
